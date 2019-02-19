@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   attr_accessor :name, :pets
   attr_reader  :species
@@ -49,6 +50,7 @@ class Owner
 
   def list_pets
     xx = "I have #{@pets[:fishes].count}"
+    binding.pry
   end
 
 
